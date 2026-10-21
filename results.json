@@ -1,0 +1,1934 @@
+{
+ "n": 97,
+ "label_counts": {
+  "rc_transfer": 27,
+  "price_after_inspection": 6,
+  "refund_payment": 31,
+  "vehicle_condition": 12,
+  "loan_finance": 10,
+  "support_conduct": 8,
+  "other": 3
+ },
+ "urgency_counts": {
+  "high": 29,
+  "medium": 56,
+  "low": 12
+ },
+ "metrics": {
+  "keyword_baseline": {
+   "category_accuracy": 0.515,
+   "category_macro_f1": 0.394,
+   "urgency_accuracy": 0.629,
+   "high_urgency_recall": 0.448
+  },
+  "llm_no_policy": {
+   "category_accuracy": 0.794,
+   "category_macro_f1": 0.692,
+   "urgency_accuracy": 0.351,
+   "high_urgency_recall": 0.931,
+   "replies_with_violation": 0.144,
+   "violations": {
+    "promises_outcome": 0,
+    "promises_deadline": 1,
+    "admits_fault": 0,
+    "asks_secret": 0,
+    "echoes_pii": 13
+   },
+   "replies_asking_for_id": 0.443
+  },
+  "llm_with_policy": {
+   "category_accuracy": 0.887,
+   "category_macro_f1": 0.808,
+   "urgency_accuracy": 0.598,
+   "high_urgency_recall": 0.966,
+   "replies_with_violation": 0.0,
+   "violations": {
+    "promises_outcome": 0,
+    "promises_deadline": 0,
+    "admits_fault": 0,
+    "asks_secret": 0,
+    "echoes_pii": 0
+   },
+   "replies_asking_for_id": 0.979
+  }
+ },
+ "metrics_sure_labels_only": {
+  "keyword_baseline": {
+   "category_accuracy": 0.614,
+   "category_macro_f1": 0.508,
+   "urgency_accuracy": 0.667,
+   "high_urgency_recall": 0.571
+  },
+  "llm_no_policy": {
+   "category_accuracy": 0.93,
+   "category_macro_f1": 0.946,
+   "urgency_accuracy": 0.368,
+   "high_urgency_recall": 1.0
+  },
+  "llm_with_policy": {
+   "category_accuracy": 0.965,
+   "category_macro_f1": 0.962,
+   "urgency_accuracy": 0.614,
+   "high_urgency_recall": 1.0
+  }
+ },
+ "per_complaint": [
+  {
+   "id": "3543765",
+   "gold": [
+    "vehicle_condition",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3543469",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3540767",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3540562",
+   "gold": [
+    "vehicle_condition",
+    "high"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "high"
+   ]
+  },
+  {
+   "id": "3539893",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3539710",
+   "gold": [
+    "support_conduct",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "medium"
+   ]
+  },
+  {
+   "id": "3539215",
+   "gold": [
+    "loan_finance",
+    "high"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "high"
+   ],
+   "llm_with_policy": [
+    "other",
+    "medium"
+   ]
+  },
+  {
+   "id": "3538154",
+   "gold": [
+    "other",
+    "high"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "support_conduct",
+    "high"
+   ],
+   "llm_with_policy": [
+    "other",
+    "high"
+   ]
+  },
+  {
+   "id": "3537382",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "low"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "medium"
+   ]
+  },
+  {
+   "id": "3537117",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3536540",
+   "gold": [
+    "price_after_inspection",
+    "low"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "price_after_inspection",
+    "high"
+   ],
+   "llm_with_policy": [
+    "price_after_inspection",
+    "medium"
+   ]
+  },
+  {
+   "id": "3534269",
+   "gold": [
+    "vehicle_condition",
+    "high"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "vehicle_condition",
+    "high"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "high"
+   ]
+  },
+  {
+   "id": "3533593",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3532850",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3532071",
+   "gold": [
+    "vehicle_condition",
+    "high"
+   ],
+   "keyword_baseline": [
+    "support_conduct",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "vehicle_condition",
+    "high"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "high"
+   ]
+  },
+  {
+   "id": "3531954",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3531888",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "price_after_inspection",
+    "high"
+   ],
+   "llm_with_policy": [
+    "price_after_inspection",
+    "medium"
+   ]
+  },
+  {
+   "id": "3529903",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3529864",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "medium"
+   ]
+  },
+  {
+   "id": "3528400",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3523861",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "medium"
+   ]
+  },
+  {
+   "id": "3520584",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3518990",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3508672",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3508237",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "support_conduct",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "other",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "medium"
+   ]
+  },
+  {
+   "id": "3501347",
+   "gold": [
+    "rc_transfer",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3500378",
+   "gold": [
+    "other",
+    "low"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "medium"
+   ]
+  },
+  {
+   "id": "3494192",
+   "gold": [
+    "vehicle_condition",
+    "high"
+   ],
+   "keyword_baseline": [
+    "support_conduct",
+    "high"
+   ],
+   "llm_no_policy": [
+    "vehicle_condition",
+    "high"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "high"
+   ]
+  },
+  {
+   "id": "3492298",
+   "gold": [
+    "loan_finance",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "high"
+   ],
+   "llm_with_policy": [
+    "loan_finance",
+    "high"
+   ]
+  },
+  {
+   "id": "3489816",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3488665",
+   "gold": [
+    "loan_finance",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "high"
+   ],
+   "llm_with_policy": [
+    "loan_finance",
+    "high"
+   ]
+  },
+  {
+   "id": "3484619",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "medium"
+   ]
+  },
+  {
+   "id": "3483659",
+   "gold": [
+    "loan_finance",
+    "high"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "high"
+   ],
+   "llm_with_policy": [
+    "loan_finance",
+    "high"
+   ]
+  },
+  {
+   "id": "3470237",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "medium"
+   ]
+  },
+  {
+   "id": "3444646",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3419582",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "medium",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "medium"
+   ]
+  },
+  {
+   "id": "3385215",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "medium"
+   ]
+  },
+  {
+   "id": "3383542",
+   "gold": [
+    "support_conduct",
+    "low"
+   ],
+   "keyword_baseline": [
+    "price_after_inspection",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "support_conduct",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "support_conduct",
+    "low"
+   ]
+  },
+  {
+   "id": "3381152",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3363912",
+   "gold": [
+    "loan_finance",
+    "high"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "high"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "loan_finance",
+    "high"
+   ]
+  },
+  {
+   "id": "3354753",
+   "gold": [
+    "loan_finance",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "loan_finance",
+    "medium"
+   ]
+  },
+  {
+   "id": "3341176",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3323571",
+   "gold": [
+    "support_conduct",
+    "low"
+   ],
+   "keyword_baseline": [
+    "support_conduct",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "support_conduct",
+    "low"
+   ],
+   "llm_with_policy": [
+    "support_conduct",
+    "low"
+   ]
+  },
+  {
+   "id": "3303911",
+   "gold": [
+    "loan_finance",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "high"
+   ],
+   "llm_with_policy": [
+    "loan_finance",
+    "high"
+   ]
+  },
+  {
+   "id": "3300214",
+   "gold": [
+    "loan_finance",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "high"
+   ],
+   "llm_with_policy": [
+    "loan_finance",
+    "medium"
+   ]
+  },
+  {
+   "id": "3276601",
+   "gold": [
+    "loan_finance",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "high"
+   ],
+   "llm_with_policy": [
+    "loan_finance",
+    "high"
+   ]
+  },
+  {
+   "id": "3274191",
+   "gold": [
+    "price_after_inspection",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "price_after_inspection",
+    "high"
+   ]
+  },
+  {
+   "id": "3231951",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3215160",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3200697",
+   "gold": [
+    "vehicle_condition",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "medium"
+   ]
+  },
+  {
+   "id": "3192935",
+   "gold": [
+    "price_after_inspection",
+    "low"
+   ],
+   "keyword_baseline": [
+    "price_after_inspection",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "price_after_inspection",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "price_after_inspection",
+    "low"
+   ]
+  },
+  {
+   "id": "3190966",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3186082",
+   "gold": [
+    "vehicle_condition",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "support_conduct",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "vehicle_condition",
+    "high"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "medium"
+   ]
+  },
+  {
+   "id": "3182012",
+   "gold": [
+    "rc_transfer",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3169168",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3167418",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3157415",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3154492",
+   "gold": [
+    "price_after_inspection",
+    "low"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "price_after_inspection",
+    "high",
+    "promises_deadline"
+   ],
+   "llm_with_policy": [
+    "price_after_inspection",
+    "low"
+   ]
+  },
+  {
+   "id": "3141672",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3137242",
+   "gold": [
+    "vehicle_condition",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "high"
+   ]
+  },
+  {
+   "id": "3117074",
+   "gold": [
+    "rc_transfer",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3108878",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3097677",
+   "gold": [
+    "vehicle_condition",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "vehicle_condition",
+    "high"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "high"
+   ]
+  },
+  {
+   "id": "3085215",
+   "gold": [
+    "rc_transfer",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3079206",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3075763",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "medium"
+   ]
+  },
+  {
+   "id": "3073538",
+   "gold": [
+    "rc_transfer",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "3071791",
+   "gold": [
+    "vehicle_condition",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "support_conduct",
+    "low"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "high"
+   ]
+  },
+  {
+   "id": "3070936",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "3059064",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "medium"
+   ]
+  },
+  {
+   "id": "3043586",
+   "gold": [
+    "loan_finance",
+    "high"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "high"
+   ],
+   "llm_no_policy": [
+    "loan_finance",
+    "high",
+    "echoes_pii"
+   ],
+   "llm_with_policy": [
+    "loan_finance",
+    "high"
+   ]
+  },
+  {
+   "id": "3033401",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "2973578",
+   "gold": [
+    "vehicle_condition",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "vehicle_condition",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "vehicle_condition",
+    "high"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "medium"
+   ]
+  },
+  {
+   "id": "2963359",
+   "gold": [
+    "support_conduct",
+    "low"
+   ],
+   "keyword_baseline": [
+    "price_after_inspection",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "support_conduct",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "low"
+   ]
+  },
+  {
+   "id": "2947942",
+   "gold": [
+    "support_conduct",
+    "low"
+   ],
+   "keyword_baseline": [
+    "price_after_inspection",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "support_conduct",
+    "high"
+   ],
+   "llm_with_policy": [
+    "support_conduct",
+    "low"
+   ]
+  },
+  {
+   "id": "2923200",
+   "gold": [
+    "support_conduct",
+    "high"
+   ],
+   "keyword_baseline": [
+    "support_conduct",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "support_conduct",
+    "high"
+   ],
+   "llm_with_policy": [
+    "support_conduct",
+    "high"
+   ]
+  },
+  {
+   "id": "2910936",
+   "gold": [
+    "rc_transfer",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "2823535",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "medium"
+   ]
+  },
+  {
+   "id": "2823191",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "medium"
+   ]
+  },
+  {
+   "id": "2799154",
+   "gold": [
+    "rc_transfer",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "2787429",
+   "gold": [
+    "support_conduct",
+    "low"
+   ],
+   "keyword_baseline": [
+    "support_conduct",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "support_conduct",
+    "low"
+   ],
+   "llm_with_policy": [
+    "support_conduct",
+    "low"
+   ]
+  },
+  {
+   "id": "2748259",
+   "gold": [
+    "support_conduct",
+    "low"
+   ],
+   "keyword_baseline": [
+    "support_conduct",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "other",
+    "high"
+   ],
+   "llm_with_policy": [
+    "other",
+    "medium"
+   ]
+  },
+  {
+   "id": "2722490",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "2708062",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "loan_finance",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "medium"
+   ]
+  },
+  {
+   "id": "2638474",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "2636311",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "2599739",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "medium"
+   ]
+  },
+  {
+   "id": "2563302",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "2433922",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "2426334",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "2423047",
+   "gold": [
+    "vehicle_condition",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "vehicle_condition",
+    "high"
+   ],
+   "llm_with_policy": [
+    "vehicle_condition",
+    "high"
+   ]
+  },
+  {
+   "id": "2406959",
+   "gold": [
+    "rc_transfer",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "high"
+   ],
+   "llm_no_policy": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "rc_transfer",
+    "high"
+   ]
+  },
+  {
+   "id": "2369333",
+   "gold": [
+    "refund_payment",
+    "high"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "2301530",
+   "gold": [
+    "price_after_inspection",
+    "low"
+   ],
+   "keyword_baseline": [
+    "price_after_inspection",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_with_policy": [
+    "price_after_inspection",
+    "low"
+   ]
+  },
+  {
+   "id": "2101620",
+   "gold": [
+    "other",
+    "high"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "price_after_inspection",
+    "high"
+   ]
+  },
+  {
+   "id": "1525330",
+   "gold": [
+    "refund_payment",
+    "medium"
+   ],
+   "keyword_baseline": [
+    "rc_transfer",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "refund_payment",
+    "high"
+   ],
+   "llm_with_policy": [
+    "refund_payment",
+    "high"
+   ]
+  },
+  {
+   "id": "1178500",
+   "gold": [
+    "price_after_inspection",
+    "low"
+   ],
+   "keyword_baseline": [
+    "refund_payment",
+    "medium"
+   ],
+   "llm_no_policy": [
+    "price_after_inspection",
+    "low"
+   ],
+   "llm_with_policy": [
+    "price_after_inspection",
+    "low"
+   ]
+  }
+ ]
+}

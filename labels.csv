@@ -1,0 +1,98 @@
+id,category,urgency,confidence,reason
+3543765,vehicle_condition,medium,unsure,PDI done badly; wants PDI fee refunded; not clearly 30+ days
+3543469,rc_transfer,medium,sure,Sold car still in seller name after three months
+3540767,rc_transfer,medium,unsure,"Ownership not transferred; insurer renewal calls, no claim or challan"
+3540562,vehicle_condition,high,unsure,"Dealer car overheated and broke down, condition not disclosed; wants refund"
+3539893,refund_payment,high,unsure,Balance withheld for challans incurred after sale; many reminders
+3539710,support_conduct,medium,unsure,Staff misled seller into paying listing fee as if sale assured
+3539215,loan_finance,high,unsure,Credit report pulled without consent; customer demands legal action
+3538154,other,high,unsure,Paid listing delisted without notice; complaint hearing referenced
+3537382,rc_transfer,medium,sure,RC transfer confirmation not received
+3537117,rc_transfer,medium,sure,Car sold in 2023 still registered to seller
+3536540,price_after_inspection,low,unsure,Very low quote after inspection; wants subscription fee back
+3534269,vehicle_condition,high,sure,PDI missed suspension defects; car unsafe to drive
+3533593,rc_transfer,medium,unsure,RC pending two years; vague threat of extreme measures
+3532850,refund_payment,medium,sure,Returned car; transfer charges and holdback not refunded
+3532071,vehicle_condition,high,unsure,Car pulls to one side after paid service; steering safety
+3531954,refund_payment,medium,sure,Wants inspection fee refunded per terms after selling elsewhere
+3531888,refund_payment,medium,unsure,Price raised after token paid; cancellation fee threatened
+3529903,rc_transfer,medium,sure,"RC not transferred, following up since 2023"
+3529864,refund_payment,medium,sure,"Token refund pending under 30 days, sent to wrong number"
+3528400,refund_payment,high,unsure,Hold amount unpaid months after sale; NOC already handed over
+3523861,rc_transfer,medium,unsure,Scrap certificate not provided; RTO denied scrappage benefit
+3520584,rc_transfer,medium,sure,RC transfer pending nearly five years
+3518990,rc_transfer,medium,sure,RC still in seller name since early 2023
+3508672,refund_payment,medium,sure,Holdback not released after original RC handed over
+3508237,rc_transfer,medium,unsure,Scrap certificate and chassis plate not provided for three months
+3501347,rc_transfer,high,sure,RC not transferred; seller receiving overspeeding challans
+3500378,other,low,unsure,"Asked to pay cancellation fee before sale, no token received"
+3494192,vehicle_condition,high,sure,"Dealer car misdescribed, rust and smoke; consumer court threatened"
+3492298,loan_finance,medium,unsure,Car taken over EMI dues and sold without consent
+3489816,rc_transfer,medium,sure,Ownership not transferred months after sale
+3488665,loan_finance,medium,unsure,"Paid loan foreclosure shortfall, then deal withdrawn; no acknowledgment"
+3484619,rc_transfer,medium,sure,Buyer RC transfer delayed six months
+3483659,loan_finance,high,unsure,Credit report generated without consent; demands legal action
+3470237,refund_payment,medium,unsure,Holdback withheld pending out-of-state party peshi; dates unclear
+3444646,refund_payment,medium,sure,Balance payment unpaid 26 days; RC documents not collected
+3419582,rc_transfer,medium,sure,Bought car not registered in buyer name after a year
+3385215,rc_transfer,medium,sure,Buyer RC not transferred; employee threatened delay
+3383542,support_conduct,low,sure,Repeated sales calls; wants number on DND
+3381152,refund_payment,high,unsure,Holdback forfeited after transfer; held about three months
+3363912,loan_finance,high,unsure,Bought car seized over financier dues; police involved
+3354753,loan_finance,medium,sure,Loan closure NOC not received eight days after payoff
+3341176,refund_payment,high,unsure,Holdback held since July; only half offered
+3323571,support_conduct,low,sure,Wants marketing calls stopped
+3303911,loan_finance,medium,sure,Car returned at delivery; loan still active
+3300214,loan_finance,medium,sure,Unauthorised loan enquiries on credit report
+3276601,loan_finance,medium,unsure,Loan not closed after sale; interest accruing
+3274191,price_after_inspection,medium,unsure,Challan amount deducted from sale price without disclosure
+3231951,rc_transfer,medium,sure,Car sold three years ago still not transferred
+3215160,rc_transfer,medium,sure,Car sold over a year ago still in seller name
+3200697,vehicle_condition,medium,sure,Return refused over minor damage within return window
+3192935,price_after_inspection,low,sure,Low quote after inspection; inspector rude
+3190966,refund_payment,high,sure,Holdback unpaid 120 days after sale
+3186082,vehicle_condition,medium,sure,"Mileage problem, return request ignored"
+3182012,rc_transfer,high,sure,"Untransferred car seized by police; seller summoned, court threatened"
+3169168,rc_transfer,medium,sure,RC not transferred; extra tax on new car
+3167418,rc_transfer,medium,unsure,Ownership not transferred; car used with expired registration
+3157415,refund_payment,medium,sure,"Challan and peshi holdback partly withheld, two weeks after sale"
+3154492,price_after_inspection,low,sure,Quote disagreement before sale; promised auction never followed up
+3141672,refund_payment,medium,unsure,Partial refund for accident car pending; old challans on buyer
+3137242,vehicle_condition,medium,sure,Faulty car; repair and return request ignored
+3117074,rc_transfer,high,sure,"RC lost, not transferred; consumer court threatened"
+3108878,refund_payment,medium,sure,Peshi holdback forfeited days after sale despite agent promise
+3097677,vehicle_condition,medium,sure,Engine turbo faulty days after purchase; wants return
+3085215,rc_transfer,high,sure,RC not transferred; seller plans police complaint
+3079206,rc_transfer,medium,sure,Dealer cannot transfer ownership; wrong RTO NOC
+3075763,refund_payment,medium,sure,"Dealer token payment not credited or refunded, ten days"
+3073538,rc_transfer,medium,sure,RC not transferred ten months after sale
+3071791,vehicle_condition,medium,unsure,Warranty claim for coolant leak unanswered for months
+3070936,refund_payment,medium,unsure,Peshi holdback forfeited after transfer; dates unclear
+3059064,refund_payment,medium,unsure,Finance demanded large down payment; wants deposit returned
+3043586,loan_finance,high,sure,Loan not foreclosed after sale; police complaint threatened
+3033401,refund_payment,high,sure,Challan holdback unpaid 45 days after receipt submitted
+2973578,vehicle_condition,medium,sure,Warranty repair approval delayed
+2963359,support_conduct,low,sure,Inspection no-shows and rude support
+2947942,support_conduct,low,sure,Inspection slot cancelled after long wait
+2923200,support_conduct,high,unsure,Promotional calls to DND number; legal complaint threatened
+2910936,rc_transfer,high,sure,Ownership not transferred; seller receiving challans
+2823535,refund_payment,medium,sure,Dealer wants security deposit refunded
+2823191,refund_payment,medium,unsure,Peshi holdback unpaid; cannot attend distant RTO
+2799154,rc_transfer,high,unsure,RC book withheld after cancelled deal; legal action threatened
+2787429,support_conduct,low,sure,No customer care in preferred language
+2748259,support_conduct,low,unsure,Vague purchase complaint; staff gave no proper answers
+2722490,refund_payment,high,unsure,Token for failed deal not refunded for over two months
+2708062,refund_payment,medium,unsure,Token and commission stuck after cancelled deal
+2638474,refund_payment,high,sure,RC holdback unpaid nearly three months after RC received
+2636311,refund_payment,high,sure,Peshi holdback unpaid over four months
+2599739,refund_payment,medium,sure,Inspection fee refund pending about 26 days after no-show
+2563302,refund_payment,medium,sure,Part of sale proceeds unpaid about two weeks
+2433922,refund_payment,medium,unsure,Token refund wanted after undisclosed defects at delivery
+2426334,refund_payment,high,sure,Sale proceeds unpaid over 30 days after delivery
+2423047,vehicle_condition,medium,unsure,"Many undisclosed defects found after purchase, incl coolant leak"
+2406959,rc_transfer,high,unsure,"Insurance transfer not done, key missing; consumer court threatened"
+2369333,refund_payment,high,sure,Peshi holdback unpaid 31 days after RTO visit
+2301530,price_after_inspection,low,unsure,Low offer before sale; cancellation penalty demanded
+2101620,other,high,unsure,Large cancellation fee demanded before sale; consumer court threatened
+1525330,refund_payment,medium,sure,Sale proceeds unpaid a week after handover
+1178500,price_after_inspection,low,sure,Very low offer after inspection; no sale
